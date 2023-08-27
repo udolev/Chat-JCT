@@ -5,7 +5,7 @@ import requests
 import json
 from PIL import Image
 
-image = Image.open('./demo/pages/acmelogo.png')
+image = Image.open('./demo/pages/acmelogo.jpeg')
 st.set_page_config(
     page_icon=image,
 )
@@ -15,7 +15,7 @@ chatapi_url = "http://127.0.0.1:8000/api/v1/chat/user_qeury"
 st.title("LLM Chat Client (OpenAI)")
 clear_btn = st.button("clear")
 
-logo = Image.open('./demo/pages/acme.png')
+logo = Image.open('./demo/pages/acme.jpeg')
 st.sidebar.image(logo, width=300)
 
 temperature = st.slider(label="Temperature", min_value=0.0, max_value=1.0, value=0.0)

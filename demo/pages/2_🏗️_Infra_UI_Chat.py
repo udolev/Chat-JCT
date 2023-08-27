@@ -6,13 +6,13 @@ from PIL import Image
 import requests
 import json
 
-image = Image.open('./demo/pages/acmelogo.png')
+image = Image.open('./demo/pages/acmelogo.jpeg')
 st.set_page_config(
     page_icon=image)
 
 api_url = "http://localhost:8000/api/v1/chat/special_assistant"
 
-logo = Image.open('./demo/pages/acme.png')
+logo = Image.open('./demo/pages/acme.jpeg')
 st.sidebar.image(logo, width=300)
 
 st.title("Infra-UI LLM Chat")
