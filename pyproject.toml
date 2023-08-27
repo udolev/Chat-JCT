@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "llm-chat-service"
+version = "0.1.0"
+description = "LLM Chat Service"
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+openai = "^0.27.8"
+fastapi = {version = "<0.100.0", extras = ["all"]}
+llama-index = "^0.8.1"
+nltk = "^3.8.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+pylint = "^2.17.5"
+yapf = "^0.40.1"
+streamlit = "^1.25.0"
+python-dotenv = "^1.0.0"
+retry = "^0.9.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
