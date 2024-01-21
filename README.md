@@ -26,7 +26,7 @@ Note that we are service the APIs over:
 
 ### Running the service
 
-In your console - export the `OPENAI_API_KEY`` env var with the key value.
+In your console - export the `OPENAI_API_KEY` env var with the key value.
 
 ### Running the demo
 * Run the service in one terminal: `uvicorn app.main:app --reload`
